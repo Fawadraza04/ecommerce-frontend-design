@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brand - My Orders</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
+<body>
+    <!-- HEADER -->
+    <header>
+        <nav class="top-nav">
+            <div class="container">
+                <ul class="nav-links">
+                    <li><a href="#">All category</a></li>
+                    <li><a href="#">Hot offers</a></li>
+                    <li><a href="#">Gift boxes</a></li>
+                    <li><a href="#">Projects</a></li>
+                    <li><a href="#">Menu item</a></li>
+                    <li class="dropdown nav-item"><span>Help</span></li>
+                </ul>
+                <div class="right-nav">
+                    <div class="dropdown">
+                        <span>English, USD</span>
+                        <span class="dropdown-arrow">▼</span>
+                    </div>
+                    <div class="dropdown">
+                        <span>Ship to</span>
+                        <img src="assets/images/germany-flag.png" alt="Germany">
+                        <span class="dropdown-arrow">▼</span>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="main-header">
+            <div class="container">
+                <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Toggle menu">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
+                </button>
+                <a href="index.html" class="logo">
+                    <img src="assets/images/logo.png" alt="Brand Logo">
+                    <span>Brand</span>
+                </a>
+                <div class="search">
+                    <input type="text" placeholder="Search" id="search-input">
+                    <select id="category-select">
+                        <option value="">All category</option>
+                        <option value="electronics">Electronics</option>
+                        <option value="clothing">Clothing</option>
+                    </select>
+                    <button type="button" id="search-btn">Search</button>
+                </div>
+                <div class="icons">
+                    <a href="profile.html" class="icon-link">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
+                        </svg>
+                        <span>Profile</span>
+                    </a>
+                    <a href="messages.html" class="icon-link">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z" />
+                        </svg>
+                        <span>Message</span>
+                    </a>
+                    <a href="orders.html" class="icon-link active">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                        </svg>
+                        <span>Orders</span>
+                    </a>
+                    <a href="my-cart.html" class="icon-link cart">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
+                        </svg>
+                        <span>My cart</span>
+                        <span class="cart-badge">3</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-overlay" id="mobile-overlay"></div>
+    <div class="mobile-menu" id="mobile-menu">
+        <div class="mobile-menu-header">
+            <a href="index.html" class="logo">
+                <img src="assets/images/logo.png" alt="Brand Logo">
+                <span>Brand</span>
+            </a>
+            <button class="mobile-menu-close" id="mobile-menu-close">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+            </button>
+        </div>
+        <nav class="mobile-menu-nav">
+            <a href="index.html">Home</a>
+            <a href="products.html">All Products</a>
+            <a href="#">Hot offers</a>
+            <a href="#">Gift boxes</a>
+            <a href="#">Projects</a>
+            <a href="profile.html">My Profile</a>
+            <a href="messages.html">Messages</a>
+            <a href="orders.html">My Orders</a>
+            <a href="my-cart.html">My Cart</a>
+            <a href="#">Help Center</a>
+        </nav>
+    </div>
+
+    <main>
+        <section class="orders-page">
+            <div class="container">
+                <h1>My Orders</h1>
+                
+                <!-- Order Tabs -->
+                <div class="order-tabs">
+                    <button class="tab-btn active">All orders</button>
+                    <button class="tab-btn">Processing</button>
+                    <button class="tab-btn">Shipped</button>
+                    <button class="tab-btn">Delivered</button>
+                    <button class="tab-btn">Cancelled</button>
+                </div>
+
+                <!-- Orders List -->
+                <div class="orders-list">
+                    <!-- Order 1 -->
+                    <div class="order-card">
+                        <div class="order-header">
+                            <div class="order-info">
+                                <span class="order-id">Order #ORD-2024-001234</span>
+                                <span class="order-date">Placed on Nov 25, 2025</span>
+                            </div>
+                            <span class="order-status delivered">Delivered</span>
+                        </div>
+                        <div class="order-items">
+                            <div class="order-item">
+                                <img src="assets/images/smart-watch.png" alt="Smart Watch">
+                                <div class="item-info">
+                                    <h4>Smart Watch Series 7 GPS 41mm</h4>
+                                    <p>Color: Black • Qty: 1</p>
+                                </div>
+                                <span class="item-price">$99.50</span>
+                            </div>
+                            <div class="order-item">
+                                <img src="assets/images/headphones.png" alt="Headphones">
+                                <div class="item-info">
+                                    <h4>Wireless Headphones with Noise Cancellation</h4>
+                                    <p>Color: White • Qty: 1</p>
+                                </div>
+                                <span class="item-price">$199.00</span>
+                            </div>
+                        </div>
+                        <div class="order-footer">
+                            <div class="order-total">
+                                <span>Total:</span>
+                                <strong>$298.50</strong>
+                            </div>
+                            <div class="order-actions">
+                                <button class="btn-secondary">View details</button>
+                                <button class="btn-primary">Buy again</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Order 2 -->
+                    <div class="order-card">
+                        <div class="order-header">
+                            <div class="order-info">
+                                <span class="order-id">Order #ORD-2024-001198</span>
+                                <span class="order-date">Placed on Nov 20, 2025</span>
+                            </div>
+                            <span class="order-status shipped">Shipped</span>
+                        </div>
+                        <div class="order-items">
+                            <div class="order-item">
+                                <img src="assets/images/laptop.png" alt="Laptop">
+                                <div class="item-info">
+                                    <h4>High-Performance Laptop 15.6" Display</h4>
+                                    <p>Color: Silver • Qty: 1</p>
+                                </div>
+                                <span class="item-price">$999.00</span>
+                            </div>
+                        </div>
+                        <div class="order-footer">
+                            <div class="order-total">
+                                <span>Total:</span>
+                                <strong>$999.00</strong>
+                            </div>
+                            <div class="order-actions">
+                                <button class="btn-secondary">Track order</button>
+                                <button class="btn-secondary">View details</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Order 3 -->
+                    <div class="order-card">
+                        <div class="order-header">
+                            <div class="order-info">
+                                <span class="order-id">Order #ORD-2024-001145</span>
+                                <span class="order-date">Placed on Nov 15, 2025</span>
+                            </div>
+                            <span class="order-status processing">Processing</span>
+                        </div>
+                        <div class="order-items">
+                            <div class="order-item">
+                                <img src="assets/images/tshirt1.png" alt="T-Shirt">
+                                <div class="item-info">
+                                    <h4>T-shirts with multiple colors for men</h4>
+                                    <p>Size: M, Color: Blue • Qty: 3</p>
+                                </div>
+                                <span class="item-price">$78.99</span>
+                            </div>
+                            <div class="order-item">
+                                <img src="assets/images/shorts.png" alt="Shorts">
+                                <div class="item-info">
+                                    <h4>Blue shorts for men casual wear</h4>
+                                    <p>Size: L • Qty: 2</p>
+                                </div>
+                                <span class="item-price">$49.00</span>
+                            </div>
+                        </div>
+                        <div class="order-footer">
+                            <div class="order-total">
+                                <span>Total:</span>
+                                <strong>$127.99</strong>
+                            </div>
+                            <div class="order-actions">
+                                <button class="btn-outline-red">Cancel order</button>
+                                <button class="btn-secondary">View details</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Order 4 -->
+                    <div class="order-card">
+                        <div class="order-header">
+                            <div class="order-info">
+                                <span class="order-id">Order #ORD-2024-001089</span>
+                                <span class="order-date">Placed on Nov 10, 2025</span>
+                            </div>
+                            <span class="order-status cancelled">Cancelled</span>
+                        </div>
+                        <div class="order-items">
+                            <div class="order-item">
+                                <img src="assets/images/camera.png" alt="Camera">
+                                <div class="item-info">
+                                    <h4>DSLR Camera with 24.1MP Sensor</h4>
+                                    <p>Color: Black • Qty: 1</p>
+                                </div>
+                                <span class="item-price">$599.00</span>
+                            </div>
+                        </div>
+                        <div class="order-footer">
+                            <div class="order-total">
+                                <span>Total:</span>
+                                <strong>$599.00</strong>
+                            </div>
+                            <div class="order-actions">
+                                <button class="btn-primary">Buy again</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-main">
+            <div class="container">
+                <div class="footer-brand">
+                    <a href="index.html" class="logo">
+                        <img src="assets/images/logo.png" alt="Brand Logo">
+                        <span>Brand</span>
+                    </a>
+                    <p>Best information about the company goes here but now lorem ipsum is</p>
+                    <div class="social-icons">
+                        <a href="#"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M14 13.5h2.5l1-4H14v-2c0-1.03 0-2 2-2h1.5V2.14c-.326-.043-1.557-.14-2.857-.14C11.928 2 10 3.657 10 6.7v2.8H7v4h3V22h4v-8.5z"/></svg></a>
+                        <a href="#"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M22.162 5.656a8.384 8.384 0 0 1-2.402.658A4.196 4.196 0 0 0 21.6 4c-.82.488-1.719.83-2.656 1.015a4.182 4.182 0 0 0-7.126 3.814 11.874 11.874 0 0 1-8.62-4.37 4.168 4.168 0 0 0-.566 2.103c0 1.45.738 2.731 1.86 3.481a4.168 4.168 0 0 1-1.894-.523v.052a4.185 4.185 0 0 0 3.355 4.101 4.21 4.21 0 0 1-1.89.072A4.185 4.185 0 0 0 7.97 16.65a8.394 8.394 0 0 1-6.191 1.732 11.83 11.83 0 0 0 6.41 1.88c7.693 0 11.9-6.373 11.9-11.9 0-.18-.005-.362-.013-.54a8.496 8.496 0 0 0 2.087-2.165z"/></svg></a>
+                        <a href="#"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M21.543 6.498C22 8.28 22 12 22 12s0 3.72-.457 5.502c-.254.985-.997 1.76-1.938 2.022C17.896 20 12 20 12 20s-5.893 0-7.605-.476c-.945-.266-1.687-1.04-1.938-2.022C2 15.72 2 12 2 12s0-3.72.457-5.502c.254-.985.997-1.76 1.938-2.022C6.107 4 12 4 12 4s5.896 0 7.605.476c.945.266 1.687 1.04 1.938 2.022z"/></svg></a>
+                    </div>
+                </div>
+                <div class="footer-column"><h4>About</h4><ul><li><a href="#">About Us</a></li><li><a href="#">Find store</a></li><li><a href="#">Categories</a></li><li><a href="#">Blogs</a></li></ul></div>
+                <div class="footer-column"><h4>Partnership</h4><ul><li><a href="#">About Us</a></li><li><a href="#">Find store</a></li><li><a href="#">Categories</a></li><li><a href="#">Blogs</a></li></ul></div>
+                <div class="footer-column"><h4>Information</h4><ul><li><a href="#">Help Center</a></li><li><a href="#">Money Refund</a></li><li><a href="#">Shipping</a></li><li><a href="#">Contact us</a></li></ul></div>
+                <div class="footer-column"><h4>For users</h4><ul><li><a href="login.html">Login</a></li><li><a href="signup.html">Register</a></li><li><a href="profile.html">Settings</a></li><li><a href="orders.html">My Orders</a></li></ul></div>
+                <div class="footer-app"><h4>Get app</h4><div class="app-buttons"><a href="#"><img src="assets/images/app-store.png" alt="App Store"></a><a href="#"><img src="assets/images/google-play.png" alt="Google Play"></a></div></div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p>© 2023 Ecommerce.</p>
+                <div class="language-selector"><img src="assets/images/us-flag.png" alt="English"><span>English</span><span>▼</span></div>
+            </div>
+        </div>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>
+

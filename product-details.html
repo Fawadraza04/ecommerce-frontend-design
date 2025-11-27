@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brand - Smart Watch Series 7 | Product Details</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
+<body>
+    <!-- ========================================
+         HEADER
+         ======================================== -->
+    <header>
+        <!-- Top Navigation -->
+        <nav class="top-nav">
+            <div class="container">
+                <ul class="nav-links">
+                    <li><a href="#">All category</a></li>
+                    <li><a href="#">Hot offers</a></li>
+                    <li><a href="#">Gift boxes</a></li>
+                    <li><a href="#">Projects</a></li>
+                    <li><a href="#">Menu item</a></li>
+                    <li class="dropdown nav-item">
+                        <span>Help</span>
+                        <ul class="dropdown-menu">
+                            <li>Customer service</li>
+                            <li>Contact us</li>
+                            <li>FAQ</li>
+                        </ul>
+                    </li>
+                </ul>
+                <div class="right-nav">
+                    <div class="dropdown">
+                        <span>English, USD</span>
+                        <span class="dropdown-arrow">▼</span>
+                    </div>
+                    <div class="dropdown">
+                        <span>Ship to</span>
+                        <img src="assets/images/germany-flag.png" alt="Germany">
+                        <span class="dropdown-arrow">▼</span>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Main Header -->
+        <div class="main-header">
+            <div class="container">
+                <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Toggle menu">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
+                </button>
+                <a href="index.html" class="logo">
+                    <img src="assets/images/logo.png" alt="Brand Logo">
+                    <span>Brand</span>
+                </a>
+                <div class="search">
+                    <input type="text" placeholder="Search" id="search-input">
+                    <select id="category-select">
+                        <option value="">All category</option>
+                        <option value="electronics" selected>Electronics</option>
+                        <option value="clothing">Clothing</option>
+                        <option value="home">Home & Garden</option>
+                    </select>
+                    <button type="button" id="search-btn">Search</button>
+                </div>
+                <div class="icons">
+                    <a href="profile.html" class="icon-link">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
+                        </svg>
+                        <span>Profile</span>
+                    </a>
+                    <a href="messages.html" class="icon-link">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z" />
+                        </svg>
+                        <span>Message</span>
+                    </a>
+                    <a href="orders.html" class="icon-link">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                        </svg>
+                        <span>Orders</span>
+                    </a>
+                    <a href="my-cart.html" class="icon-link cart">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
+                        </svg>
+                        <span>My cart</span>
+                        <span class="cart-badge">3</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-overlay" id="mobile-overlay"></div>
+    <div class="mobile-menu" id="mobile-menu">
+        <div class="mobile-menu-header">
+            <a href="index.html" class="logo">
+                <img src="assets/images/logo.png" alt="Brand Logo">
+                <span>Brand</span>
+            </a>
+            <button class="mobile-menu-close" id="mobile-menu-close">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+            </button>
+        </div>
+        <nav class="mobile-menu-nav">
+            <a href="index.html">Home</a>
+            <a href="products.html">All Products</a>
+            <a href="#">Hot offers</a>
+            <a href="#">Gift boxes</a>
+            <a href="#">Projects</a>
+            <a href="profile.html">My Profile</a>
+            <a href="messages.html">Messages</a>
+            <a href="orders.html">My Orders</a>
+            <a href="my-cart.html">My Cart</a>
+            <a href="#">Help Center</a>
+        </nav>
+    </div>
+
+    <main>
+        <!-- Breadcrumb -->
+        <div class="breadcrumb">
+            <div class="container">
+                <a href="index.html">Home</a>
+                <span>›</span>
+                <a href="products.html">Electronics</a>
+                <span>›</span>
+                <a href="products.html">Smart watches</a>
+                <span>›</span>
+                <span class="current">Smart Watch Series 7</span>
+            </div>
+        </div>
+
+        <!-- ========================================
+             PRODUCT DETAILS MAIN
+             ======================================== -->
+        <section class="product-details-page">
+            <div class="container">
+                <div class="product-details-main">
+                    <!-- Product Gallery -->
+                    <div class="product-gallery">
+                        <div class="main-image">
+                            <img src="assets/images/smart-watch.png" alt="Smart Watch Series 7" id="main-product-image">
+                        </div>
+                        <div class="thumbnail-gallery">
+                            <button class="thumbnail active" data-image="assets/images/smart-watch.png">
+                                <img src="assets/images/smart-watch.png" alt="Smart Watch view 1">
+                            </button>
+                            <button class="thumbnail" data-image="assets/images/smart-watch.png">
+                                <img src="assets/images/smart-watch.png" alt="Smart Watch view 2">
+                            </button>
+                            <button class="thumbnail" data-image="assets/images/smart-watch.png">
+                                <img src="assets/images/smart-watch.png" alt="Smart Watch view 3">
+                            </button>
+                            <button class="thumbnail" data-image="assets/images/smart-watch.png">
+                                <img src="assets/images/smart-watch.png" alt="Smart Watch view 4">
+                            </button>
+                            <button class="thumbnail" data-image="assets/images/smart-watch.png">
+                                <img src="assets/images/smart-watch.png" alt="Smart Watch view 5">
+                            </button>
+                            <button class="thumbnail" data-image="assets/images/smart-watch.png">
+                                <img src="assets/images/smart-watch.png" alt="Smart Watch view 6">
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Product Info -->
+                    <div class="product-info">
+                        <div class="product-status">
+                            <span class="in-stock">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                                </svg>
+                                In stock
+                            </span>
+                        </div>
+                        <h1>Mens Long Sleeve T-shirt Cotton Base Layer Slim Muscle</h1>
+                        <div class="product-rating">
+                            <span class="stars">★★★★☆</span>
+                            <span class="score">9.3</span>
+                            <span class="reviews">· 32 reviews</span>
+                            <span class="orders">· 154 sold</span>
+                            <span class="free-shipping">· Free Shipping</span>
+                        </div>
+
+                        <!-- Price Box -->
+                        <div class="price-box">
+                            <div class="price-tier">
+                                <p class="price">$98.00</p>
+                                <p class="quantity">50-100 pcs</p>
+                            </div>
+                            <div class="price-tier">
+                                <p class="price">$90.00</p>
+                                <p class="quantity">100-700 pcs</p>
+                            </div>
+                            <div class="price-tier">
+                                <p class="price">$78.00</p>
+                                <p class="quantity">700+ pcs</p>
+                            </div>
+                        </div>
+
+                        <!-- Product Options -->
+                        <div class="product-options">
+                            <div class="option-row">
+                                <span class="option-label">Price:</span>
+                                <span class="option-value">Negotiable</span>
+                            </div>
+                            <div class="option-row">
+                                <span class="option-label">Type:</span>
+                                <span class="option-value">Classic shoes</span>
+                            </div>
+                            <div class="option-row">
+                                <span class="option-label">Material:</span>
+                                <span class="option-value">Plastic material</span>
+                            </div>
+                            <div class="option-row">
+                                <span class="option-label">Design:</span>
+                                <span class="option-value">Modern nice</span>
+                            </div>
+                            <div class="option-row">
+                                <span class="option-label">Customization:</span>
+                                <span class="option-value">Customized logo and design custom packages</span>
+                            </div>
+                            <div class="option-row">
+                                <span class="option-label">Protection:</span>
+                                <span class="option-value">Refund Policy</span>
+                            </div>
+                            <div class="option-row">
+                                <span class="option-label">Warranty:</span>
+                                <span class="option-value">2 years full warranty</span>
+                            </div>
+                        </div>
+
+                        <!-- Size Selector -->
+                        <div class="option-row">
+                            <span class="option-label">Size:</span>
+                            <div class="size-selector">
+                                <button class="size-btn" data-size="sm">Small</button>
+                                <button class="size-btn active" data-size="md">Medium</button>
+                                <button class="size-btn" data-size="lg">Large</button>
+                                <button class="size-btn" data-size="xl">X-Large</button>
+                            </div>
+                        </div>
+
+                        <!-- Color Selector -->
+                        <div class="option-row" style="margin-top: 16px;">
+                            <span class="option-label">Color:</span>
+                            <div class="color-selector">
+                                <button class="color-btn active" data-color="black" style="background: #1C1C1C;" title="Black"></button>
+                                <button class="color-btn" data-color="blue" style="background: #0D6EFD;" title="Blue"></button>
+                                <button class="color-btn" data-color="red" style="background: #FA3434;" title="Red"></button>
+                                <button class="color-btn" data-color="green" style="background: #00B517;" title="Green"></button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Supplier Info -->
+                    <div class="supplier-info">
+                        <div class="supplier-header">
+                            <div class="supplier-avatar">R</div>
+                            <div>
+                                <p class="name">Supplier</p>
+                                <p style="font-size: 12px; color: var(--gray-500);">Guanjoi Trading LLC</p>
+                            </div>
+                        </div>
+                        <div class="supplier-meta">
+                            <div class="supplier-meta-item">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                </svg>
+                                Germany, Berlin
+                            </div>
+                            <div class="supplier-meta-item">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                                </svg>
+                                Verified Seller
+                            </div>
+                            <div class="supplier-meta-item">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4" />
+                                </svg>
+                                Worldwide shipping
+                            </div>
+                        </div>
+                        <button class="btn-supplier">Send inquiry</button>
+                        <button class="btn-profile">Seller's profile</button>
+                    </div>
+                </div>
+
+                <!-- Product Actions (Mobile/Sticky) -->
+                <div class="product-actions" style="margin-bottom: 20px;">
+                    <button class="btn-cart" id="add-to-cart-btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" style="width: 18px; height: 18px; margin-right: 8px; display: inline;">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
+                        </svg>
+                        Add to cart
+                    </button>
+                    <button class="btn-wishlist" id="add-to-wishlist-btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                        </svg>
+                        Save for later
+                    </button>
+                </div>
+
+                <!-- ========================================
+                     PRODUCT TABS (Description, Reviews, etc.)
+                     ======================================== -->
+                <div class="product-tabs">
+                    <div class="tabs-nav">
+                        <button class="tab-btn active" data-tab="description">Description</button>
+                        <button class="tab-btn" data-tab="reviews">Reviews</button>
+                        <button class="tab-btn" data-tab="shipping">Shipping</button>
+                        <button class="tab-btn" data-tab="about">About seller</button>
+                    </div>
+
+                    <!-- Description Tab -->
+                    <div class="tab-content active" id="description">
+                        <h3>Product Description</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        
+                        <h3>Specifications</h3>
+                        <table class="specs-table">
+                            <tr>
+                                <td>Model</td>
+                                <td>#8786867</td>
+                            </tr>
+                            <tr>
+                                <td>Style</td>
+                                <td>Classic style</td>
+                            </tr>
+                            <tr>
+                                <td>Certificate</td>
+                                <td>ISO-898921212</td>
+                            </tr>
+                            <tr>
+                                <td>Size</td>
+                                <td>34mm x 450mm x 19mm</td>
+                            </tr>
+                            <tr>
+                                <td>Memory</td>
+                                <td>36GB RAM</td>
+                            </tr>
+                        </table>
+
+                        <h3>Features</h3>
+                        <ul>
+                            <li>Some great feature name here</li>
+                            <li>Lorem ipsum dolor sit amet, consectetur</li>
+                            <li>Duis aute irure dolor in reprehenderit</li>
+                            <li>Some great feature name here</li>
+                        </ul>
+                    </div>
+
+                    <!-- Reviews Tab -->
+                    <div class="tab-content" id="reviews">
+                        <h3>Customer Reviews</h3>
+                        <div class="reviews-summary">
+                            <div class="rating-overview">
+                                <p class="big-score">4.8</p>
+                                <div class="stars">★★★★★</div>
+                                <p class="total-reviews">32 Reviews</p>
+                            </div>
+                            <div class="rating-bars">
+                                <div class="rating-bar-row">
+                                    <span>5 star</span>
+                                    <div class="bar-container">
+                                        <div class="bar-fill" style="width: 80%;"></div>
+                                    </div>
+                                    <span class="count">24</span>
+                                </div>
+                                <div class="rating-bar-row">
+                                    <span>4 star</span>
+                                    <div class="bar-container">
+                                        <div class="bar-fill" style="width: 15%;"></div>
+                                    </div>
+                                    <span class="count">5</span>
+                                </div>
+                                <div class="rating-bar-row">
+                                    <span>3 star</span>
+                                    <div class="bar-container">
+                                        <div class="bar-fill" style="width: 6%;"></div>
+                                    </div>
+                                    <span class="count">2</span>
+                                </div>
+                                <div class="rating-bar-row">
+                                    <span>2 star</span>
+                                    <div class="bar-container">
+                                        <div class="bar-fill" style="width: 3%;"></div>
+                                    </div>
+                                    <span class="count">1</span>
+                                </div>
+                                <div class="rating-bar-row">
+                                    <span>1 star</span>
+                                    <div class="bar-container">
+                                        <div class="bar-fill" style="width: 0%;"></div>
+                                    </div>
+                                    <span class="count">0</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Review Cards -->
+                        <div class="review-card">
+                            <div class="review-header">
+                                <div class="reviewer-avatar">JD</div>
+                                <div class="reviewer-info">
+                                    <p class="name">John Doe</p>
+                                    <p class="date">November 15, 2025</p>
+                                </div>
+                                <div class="review-rating">★★★★★</div>
+                            </div>
+                            <p class="review-text">Great product, highly recommend! The quality is excellent and it arrived faster than expected. Will definitely buy from this seller again.</p>
+                        </div>
+
+                        <div class="review-card">
+                            <div class="review-header">
+                                <div class="reviewer-avatar">JS</div>
+                                <div class="reviewer-info">
+                                    <p class="name">Jane Smith</p>
+                                    <p class="date">November 10, 2025</p>
+                                </div>
+                                <div class="review-rating">★★★★★</div>
+                            </div>
+                            <p class="review-text">Excellent battery life and the display is beautiful. This smart watch exceeded my expectations in every way.</p>
+                        </div>
+
+                        <div class="review-card">
+                            <div class="review-header">
+                                <div class="reviewer-avatar">MJ</div>
+                                <div class="reviewer-info">
+                                    <p class="name">Mike Johnson</p>
+                                    <p class="date">November 5, 2025</p>
+                                </div>
+                                <div class="review-rating">★★★★☆</div>
+                            </div>
+                            <p class="review-text">Good product overall. The features work as advertised. Only giving 4 stars because the strap could be more comfortable.</p>
+                        </div>
+
+                        <div class="review-card">
+                            <div class="review-header">
+                                <div class="reviewer-avatar">EW</div>
+                                <div class="reviewer-info">
+                                    <p class="name">Emily Wilson</p>
+                                    <p class="date">October 28, 2025</p>
+                                </div>
+                                <div class="review-rating">★★★★★</div>
+                            </div>
+                            <p class="review-text">Perfect gift for my husband. He loves it! The heart rate monitor is very accurate and the GPS works great during workouts.</p>
+                        </div>
+                    </div>
+
+                    <!-- Shipping Tab -->
+                    <div class="tab-content" id="shipping">
+                        <h3>Shipping Information</h3>
+                        <p>We ship worldwide using reliable shipping partners. Standard shipping typically takes 5-10 business days, while express shipping takes 2-4 business days.</p>
+                        
+                        <h3>Shipping Options</h3>
+                        <table class="specs-table">
+                            <tr>
+                                <td>Standard Shipping</td>
+                                <td>Free (5-10 business days)</td>
+                            </tr>
+                            <tr>
+                                <td>Express Shipping</td>
+                                <td>$12.99 (2-4 business days)</td>
+                            </tr>
+                            <tr>
+                                <td>Next Day Delivery</td>
+                                <td>$24.99 (1 business day)</td>
+                            </tr>
+                        </table>
+
+                        <h3>Return Policy</h3>
+                        <p>We offer a 30-day return policy for all items. Items must be returned in their original packaging and in unused condition. Contact our customer service team to initiate a return.</p>
+                    </div>
+
+                    <!-- About Seller Tab -->
+                    <div class="tab-content" id="about">
+                        <h3>About Guanjoi Trading LLC</h3>
+                        <p>Guanjoi Trading LLC is a verified seller on our platform with over 5 years of experience. They specialize in electronics and have maintained a 98% positive feedback rate from buyers.</p>
+                        
+                        <h3>Seller Statistics</h3>
+                        <table class="specs-table">
+                            <tr>
+                                <td>Member since</td>
+                                <td>January 2020</td>
+                            </tr>
+                            <tr>
+                                <td>Total sales</td>
+                                <td>15,432 orders</td>
+                            </tr>
+                            <tr>
+                                <td>Response time</td>
+                                <td>Within 24 hours</td>
+                            </tr>
+                            <tr>
+                                <td>Positive feedback</td>
+                                <td>98.5%</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========================================
+             RELATED PRODUCTS
+             ======================================== -->
+        <section class="related-products">
+            <div class="container">
+                <h3>Related products</h3>
+                <div class="recommended-grid">
+                    <div class="recommended-card">
+                        <div class="card-image">
+                            <img src="assets/images/headphones.png" alt="Headphones">
+                        </div>
+                        <p class="price">$199.00</p>
+                        <p class="description">Wireless headphones with noise cancellation</p>
+                    </div>
+                    <div class="recommended-card">
+                        <div class="card-image">
+                            <img src="assets/images/laptop.png" alt="Laptop">
+                        </div>
+                        <p class="price">$999.00</p>
+                        <p class="description">High-performance laptop 15.6" display</p>
+                    </div>
+                    <div class="recommended-card">
+                        <div class="card-image">
+                            <img src="assets/images/camera.png" alt="Camera">
+                        </div>
+                        <p class="price">$599.00</p>
+                        <p class="description">DSLR camera with 24.1MP sensor</p>
+                    </div>
+                    <div class="recommended-card">
+                        <div class="card-image">
+                            <img src="assets/images/iphone.png" alt="iPhone">
+                        </div>
+                        <p class="price">$999.00</p>
+                        <p class="description">Latest iPhone model 256GB storage</p>
+                    </div>
+                    <div class="recommended-card">
+                        <div class="card-image">
+                            <img src="assets/images/gopro.png" alt="GoPro">
+                        </div>
+                        <p class="price">$399.00</p>
+                        <p class="description">GoPro HERO11 Black action camera</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========================================
+             NEWSLETTER
+             ======================================== -->
+        <section class="newsletter">
+            <div class="container">
+                <h3>Subscribe on our newsletter</h3>
+                <p>Get daily news on upcoming offers from many suppliers all over the world</p>
+                <form id="newsletter-form">
+                    <input type="email" placeholder="Email" required>
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- ========================================
+         FOOTER
+         ======================================== -->
+    <footer>
+        <div class="footer-main">
+            <div class="container">
+                <div class="footer-brand">
+                    <a href="index.html" class="logo">
+                        <img src="assets/images/logo.png" alt="Brand Logo">
+                        <span>Brand</span>
+                    </a>
+                    <p>Best information about the company goes here but now lorem ipsum is</p>
+                    <div class="social-icons">
+                        <a href="#" aria-label="Facebook">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M14 13.5h2.5l1-4H14v-2c0-1.03 0-2 2-2h1.5V2.14c-.326-.043-1.557-.14-2.857-.14C11.928 2 10 3.657 10 6.7v2.8H7v4h3V22h4v-8.5z"/></svg>
+                        </a>
+                        <a href="#" aria-label="Twitter">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M22.162 5.656a8.384 8.384 0 0 1-2.402.658A4.196 4.196 0 0 0 21.6 4c-.82.488-1.719.83-2.656 1.015a4.182 4.182 0 0 0-7.126 3.814 11.874 11.874 0 0 1-8.62-4.37 4.168 4.168 0 0 0-.566 2.103c0 1.45.738 2.731 1.86 3.481a4.168 4.168 0 0 1-1.894-.523v.052a4.185 4.185 0 0 0 3.355 4.101 4.21 4.21 0 0 1-1.89.072A4.185 4.185 0 0 0 7.97 16.65a8.394 8.394 0 0 1-6.191 1.732 11.83 11.83 0 0 0 6.41 1.88c7.693 0 11.9-6.373 11.9-11.9 0-.18-.005-.362-.013-.54a8.496 8.496 0 0 0 2.087-2.165z"/></svg>
+                        </a>
+                        <a href="#" aria-label="YouTube">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M21.543 6.498C22 8.28 22 12 22 12s0 3.72-.457 5.502c-.254.985-.997 1.76-1.938 2.022C17.896 20 12 20 12 20s-5.893 0-7.605-.476c-.945-.266-1.687-1.04-1.938-2.022C2 15.72 2 12 2 12s0-3.72.457-5.502c.254-.985.997-1.76 1.938-2.022C6.107 4 12 4 12 4s5.896 0 7.605.476c.945.266 1.687 1.04 1.938 2.022zM10 15.5l6-3.5-6-3.5v7z"/></svg>
+                        </a>
+                        <a href="#" aria-label="Instagram">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2c2.717 0 3.056.01 4.122.06 1.065.05 1.79.217 2.428.465.66.254 1.216.598 1.772 1.153a4.908 4.908 0 0 1 1.153 1.772c.247.637.415 1.363.465 2.428.047 1.066.06 1.405.06 4.122 0 2.717-.01 3.056-.06 4.122-.05 1.065-.218 1.79-.465 2.428a4.883 4.883 0 0 1-1.153 1.772 4.915 4.915 0 0 1-1.772 1.153c-.637.247-1.363.415-2.428.465-1.066.047-1.405.06-4.122.06-2.717 0-3.056-.01-4.122-.06-1.065-.05-1.79-.218-2.428-.465a4.89 4.89 0 0 1-1.772-1.153 4.904 4.904 0 0 1-1.153-1.772c-.248-.637-.415-1.363-.465-2.428C2.013 15.056 2 14.717 2 12c0-2.717.01-3.056.06-4.122.05-1.066.217-1.79.465-2.428a4.88 4.88 0 0 1 1.153-1.772A4.897 4.897 0 0 1 5.45 2.525c.638-.248 1.362-.415 2.428-.465C8.944 2.013 9.283 2 12 2zm0 1.802c-2.67 0-2.986.01-4.04.058-.976.045-1.505.207-1.858.344-.466.182-.8.398-1.15.748-.35.35-.566.684-.748 1.15-.137.353-.3.882-.344 1.857-.048 1.055-.058 1.37-.058 4.041 0 2.67.01 2.986.058 4.04.045.976.207 1.505.344 1.858.182.466.399.8.748 1.15.35.35.684.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058 2.67 0 2.987-.01 4.04-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.684.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041 0-2.67-.01-2.986-.058-4.04-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 0 0-.748-1.15 3.098 3.098 0 0 0-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.055-.048-1.37-.058-4.041-.058zm0 3.063a5.135 5.135 0 1 1 0 10.27 5.135 5.135 0 0 1 0-10.27zm0 8.468a3.333 3.333 0 1 0 0-6.666 3.333 3.333 0 0 0 0 6.666zm6.538-8.671a1.2 1.2 0 1 1-2.4 0 1.2 1.2 0 0 1 2.4 0z"/></svg>
+                        </a>
+                        <a href="#" aria-label="LinkedIn">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M6.94 5a2 2 0 1 1-4-.002 2 2 0 0 1 4 .002zM7 8.48H3V21h4V8.48zm6.32 0H9.34V21h3.94v-6.57c0-3.66 4.77-4 4.77 0V21H22v-7.93c0-6.17-7.06-5.94-8.72-2.91l.04-1.68z"/></svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h4>About</h4>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Find store</a></li>
+                        <li><a href="#">Categories</a></li>
+                        <li><a href="#">Blogs</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Partnership</h4>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Find store</a></li>
+                        <li><a href="#">Categories</a></li>
+                        <li><a href="#">Blogs</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Information</h4>
+                    <ul>
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">Money Refund</a></li>
+                        <li><a href="#">Shipping</a></li>
+                        <li><a href="#">Contact us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>For users</h4>
+                    <ul>
+                        <li><a href="login.html">Login</a></li>
+                        <li><a href="signup.html">Register</a></li>
+                        <li><a href="profile.html">Settings</a></li>
+                        <li><a href="orders.html">My Orders</a></li>
+                    </ul>
+                </div>
+                <div class="footer-app">
+                    <h4>Get app</h4>
+                    <div class="app-buttons">
+                        <a href="#">
+                            <img src="assets/images/app-store.png" alt="Download on App Store">
+                        </a>
+                        <a href="#">
+                            <img src="assets/images/google-play.png" alt="Get it on Google Play">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p>© 2023 Ecommerce.</p>
+                <div class="language-selector">
+                    <img src="assets/images/us-flag.png" alt="English">
+                    <span>English</span>
+                    <span>▼</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
